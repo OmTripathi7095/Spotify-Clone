@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(246, 240, 228);
+    
+}
+
+li{
+    display: block;
+    margin: 0;
+    padding: 26px;
+    padding-left: 15px;
+    list-style-type: none;
+    /* font-size: 0.8em; */
+    cursor: pointer;
+    
+}
+li:hover{
+    background-color: rgb(34, 33, 33);
+}
+.list{
+    margin: 0;
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+  
+}
+#logolabel{
+   font-size: 1.4em;
+    margin-right: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+}
+
+#logo{
+    margin-right: 5px;
+    margin-left: 10px;
+    height: 45px;
+    
+}
+.container{
+    min-height: 70vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 70vw;
+    margin: 10px auto;
+    border-radius: 2%;
+    padding: 40px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    font-family: 'Varela Round', sans-serif;
+}
+.bottom{
+    height: 150px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    flex-direction: column;
+}
+#icons{
+    display: block;
+}
+#icons i{
+      margin: 5px 15px;
+      cursor: pointer;
+}
+.songCover i{
+   
+    cursor: pointer;
+    transform: translateX(15px);
+}
+#range{
+    margin-bottom: 10px;
+    width: 80vw;
+    cursor: pointer;
+    
+}
+.song{
+    border-radius: 40px;
+    height: 65px;
+    padding: 2px;
+    /* border: 1px solid white; */
+    box-shadow: 0 0 5px white ;
+}
+.songName{
+  margin-bottom: 3px;
+ font-size: large;
+}
+.songCover{
+    
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 35vw;
+  
+    /* display: inline-block; */
+    border-radius: 20px;
+    margin: 25px 0;
+    margin-left: 30px;
+}
+#SongName{
+   transform: translateX(-500px);
+   font-size: 1.4em;
+}
+#preloader{
+    background-color: black ;
+    background-image: url(preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+    visibility: visible;
+     transition-property: visibility;
+    transition-duration: 1000ms;
+    
+}
